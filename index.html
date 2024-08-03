@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Moeda</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <img class="logo" src="./assets/logo.gif" ald="" logo-conversor-de-moeda />
+    <div class="principal">
+        <label>
+            Converter de:
+            <select>
+                <option>R$ Real</option>
+            </select>
+        </label>
+        <label>
+            Converter para:
+            <select class="select">
+                <option value="dolar">US$ Dólar</option>
+                <option value="real">R$ Real</option>
+                <option value="euro">€ Euro</option>
+                <option value="libra">£ Libra</option>
+                <option value="bitcoin">₿ BitCoin</option>
+            </select>
+        </label>
+        <label>
+            Valor:
+            <input class="input" placeholder="R$ 10.000,00"></input>
+        </label>
+
+        <button class="button">Converter</button>
+
+        <div class="conversor">
+            <div class="box">
+                <img class="moeda-real" src="./assets/real.png" alt="moeda-real">
+                <p class="tipo-moeda">Real</p>
+                <p class="valor-converter" >R$ 0,00</p>
+            </div>
+
+            <img class="seta" src="./assets/seta-para-baixo.png" alt="seta-para-baixo">
+
+            <div class="box">
+                <img class="img-convertido" src="./assets/dolar.png" alt="moeda-dolar">
+                <p class="tipo-moeda" id="nome-moeda">Dólar</p>
+                <p class="valor-convertido">US$ 0,00</p>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./script.js"></script>
+</html>
